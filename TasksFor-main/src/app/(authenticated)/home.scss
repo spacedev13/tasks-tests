@@ -1,0 +1,47 @@
+@import '../utils/mixins-utils.scss';
+
+//LAYOUT
+header {
+  padding: rem(70) 0 0;
+
+  h1 {
+    text-align: center;
+    user-select: none;
+  }
+
+}
+
+ul {
+  display: flex;
+  margin: rem(20) 0 0;
+  background-color: var(--bg-color-white-opacity-40);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+
+  .link {
+    flex: 1 1 rem(150);
+    font-family: var(--font-mono);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black-default);
+    padding: rem(10);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      background-color: var(--bg-color-white-opacity-40);
+    }
+  }
+}
+
+main {
+  height: 70%;
+  background-color: var(--bg-color-white-opacity-90);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+
+//PAGE
